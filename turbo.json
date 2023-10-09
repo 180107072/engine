@@ -1,0 +1,15 @@
+{
+  "npmClient": "pnpm",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".umi/**", ".next/**"]
+    },
+    "deploy": {
+      "dependsOn": ["build"]
+    },
+    "dev": {
+      "cache": false
+    }
+  }
+}

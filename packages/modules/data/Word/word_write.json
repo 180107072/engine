@@ -1,0 +1,46 @@
+{
+	"name": "word_write",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "Word",
+	"function": "word_write",
+	"class_params": {
+		"file_path": {
+			"type": "string",
+			"example": "ex:'C:/User/example.doc'",
+			"required": true,
+			"path": false,
+			"output": false
+		}
+	},
+	"func_params": {
+		"already_created": {
+			"type": "boolean",
+			"example": "ex:True",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"text_to_write": {
+			"type": "string",
+			"example": "ex:'asdfasdfasdf'",
+			"required": true,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "finish",
+	"additional_info": {
+		"inheritance": false
+	}
+}

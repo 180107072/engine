@@ -1,0 +1,88 @@
+{
+	"name": "send mail",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "email",
+	"function": "send",
+	"class_params": {
+		"email_address": {
+			"type": "string",
+			"example": "ex:'asd@mail.ru'",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"email_password": {
+			"type": "string",
+			"example": "ex:'asdasdas'",
+			"required": true,
+			"path": false,
+			"output": false
+		}
+	},
+	"func_params": {
+		"receivers": {
+			"type": "list",
+			"example": "ex:['qwe@gmail.com','rty@mail.ru']",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"type_of_mail_service": {
+			"type": "string",
+			"example": "ex:'mail.ru",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"subject": {
+			"type": "string",
+			"example": "ex:'title'",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"body_txt": {
+			"type": "string",
+			"example": "ex:'afwefadf\nasdasda'",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"attached_files": {
+			"type": "list",
+			"example": "ex['c:\\path\\dsa.pdf','e:\\path\\asd.docx']",
+			"required": false,
+			"path": true,
+			"output": false
+		},
+		"attached_imgs": {
+			"type": "list",
+			"example": "ex['c:\\path\\dsa.png','e:\\path\\asd.jpg']",
+			"required": false,
+			"path": true,
+			"output": false
+		},
+		"html": {
+			"type": "string",
+			"example": "ex:'<h5>asdasd<\\h5>'",
+			"required": false,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "condition",
+	"additional_info": {
+		"inheritance": false
+	}
+}

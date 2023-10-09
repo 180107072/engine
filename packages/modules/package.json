@@ -1,0 +1,13 @@
+{
+  "name": "@engine/modules",
+  "version": "0.0.1",
+  "private": true,
+  "keywords": [
+    "modules"
+  ],
+  "files": [
+    "./pythonRPA/*.json"
+  ],
+  "type": "module",
+  "license": "ISC"
+}

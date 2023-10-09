@@ -1,0 +1,38 @@
+{
+	"name": "create folder",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "folder",
+	"function": "append",
+	"class_params": {},
+	"func_params": {
+		"name": {
+			"type": "string",
+			"example": "ex:'asd'",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"path": {
+			"type": "string",
+			"example": "ex:'c:\\path'",
+			"required": true,
+			"path": true,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "condition",
+	"additional_info": {
+		"inheritance": false
+	}
+}

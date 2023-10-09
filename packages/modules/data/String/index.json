@@ -1,0 +1,52 @@
+{
+	"name": "string index",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "String",
+	"function": "index",
+	"class_params": {},
+	"func_params": {
+		"string": {
+			"type": "string",
+			"example": "ex:'text'",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"sub": {
+			"type": "string",
+			"example": "ex:'e'",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"start": {
+			"type": "number",
+			"example": "ex:0",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"end": {
+			"type": "number",
+			"example": "ex:-1",
+			"required": false,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "finish",
+	"additional_info": {
+		"inheritance": false
+	}
+}

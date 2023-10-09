@@ -1,0 +1,52 @@
+{
+	"name": "start scenario in current",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "core",
+	"function": "start_scenario",
+	"class_params": {},
+	"func_params": {
+		"robot_json": {
+			"type": "dict",
+			"example": "ex:{}or'C:\\asd\\asd.json'",
+			"required": true,
+			"path": true,
+			"output": false
+		},
+		"robot_path": {
+			"type": "string",
+			"example": "ex:'C:\\asd\\asd.json'",
+			"required": false,
+			"path": true,
+			"output": false
+		},
+		"params": {
+			"type": "dict",
+			"example": "ex:{\"example_var\":\"1\",\"example_var1\":[0,1]}",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"credentials": {
+			"type": "list",
+			"example": "ex:['1ce','asdasd']",
+			"required": false,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "block_id",
+	"additional_info": {
+		"inheritance": false
+	}
+}

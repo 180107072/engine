@@ -1,0 +1,53 @@
+{
+	"name": "clear",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "SAP",
+	"function": "clear",
+	"class_params": {
+		"selector": {
+			"type": "string",
+			"example": "ex:'win[0]'",
+			"required": true,
+			"path": false,
+			"output": false
+		}
+	},
+	"func_params": {
+		"timeout": {
+			"type": "number",
+			"example": "ex:30",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"delay_before": {
+			"type": "number",
+			"example": "ex:0",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"delay_after": {
+			"type": "number",
+			"example": "ex:0",
+			"required": false,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "finish",
+	"additional_info": {
+		"inheritance": false
+	}
+}

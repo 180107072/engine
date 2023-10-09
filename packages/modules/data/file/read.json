@@ -1,0 +1,38 @@
+{
+	"name": "read file",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "file",
+	"function": "read",
+	"class_params": {},
+	"func_params": {
+		"path": {
+			"type": "string",
+			"example": "ex:'c:\\path\\asd.txt'",
+			"required": true,
+			"path": true,
+			"output": false
+		},
+		"encoding": {
+			"type": "string",
+			"example": "ex:'utf-8'",
+			"required": true,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "condition",
+	"additional_info": {
+		"inheritance": false
+	}
+}

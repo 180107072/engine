@@ -1,0 +1,31 @@
+{
+	"name": "script",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "invoce_code",
+	"function": "script",
+	"class_params": {},
+	"func_params": {
+		"code": {
+			"type": "string",
+			"example": "ex:'print('asd')",
+			"required": true,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": null,
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "0001",
+	"additional_info": {
+		"inheritance": false
+	}
+}

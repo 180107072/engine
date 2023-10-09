@@ -1,0 +1,29 @@
+{
+	"name": "start scenario in current",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "core",
+	"function": "return_value",
+	"class_params": {},
+	"func_params": {
+		"value": {
+			"type": "string",
+			"required": false,
+			"path": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "block_id",
+	"additional_info": {
+		"inheritance": false
+	}
+}

@@ -1,0 +1,53 @@
+{
+	"name": "wait appear",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "byImage",
+	"function": "wait_appear",
+	"class_params": {
+		"image_path": {
+			"type": "string",
+			"example": "ex:'c:\\path'",
+			"required": true,
+			"path": true,
+			"output": false
+		},
+		"confidence": {
+			"type": "float",
+			"example": "ex:0.9",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"greyscale": {
+			"type": "boolean",
+			"example": "ex:true",
+			"required": true,
+			"path": false,
+			"output": false
+		}
+	},
+	"func_params": {
+		"sec": {
+			"type": "number",
+			"example": "ex:5",
+			"required": true,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "finish",
+	"additional_info": {
+		"inheritance": false
+	}
+}

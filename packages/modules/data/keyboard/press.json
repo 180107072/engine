@@ -1,0 +1,51 @@
+{
+	"name": "keyboard_write",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "keyboard",
+	"function": "press",
+	"class_params": {},
+	"func_params": {
+		"keys": {
+			"type": "string",
+			"example": "ex:'enter'",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"timing_after": {
+			"type": "float",
+			"example": "ex:0.1",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"timing_before": {
+			"type": "float",
+			"example": "ex:0.1",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"n_time": {
+			"type": "number",
+			"example": "ex:1",
+			"required": true,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0
+	},
+	"start": false,
+	"next_id": "7",
+	"additional_info": {
+		"inheritance": false
+	}
+}

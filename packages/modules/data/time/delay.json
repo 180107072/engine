@@ -1,0 +1,31 @@
+{
+	"name": "delay",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "time",
+	"function": "delay",
+	"class_params": {},
+	"func_params": {
+		"sec": {
+			"type": "number",
+			"example": "ex:1",
+			"required": true,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"break_point": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "",
+	"additional_info": {
+		"inheritance": false
+	}
+}

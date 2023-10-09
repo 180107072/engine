@@ -1,0 +1,102 @@
+{
+	"name": "read mail",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "email",
+	"function": "read",
+	"class_params": {
+		"email_address": {
+			"type": "string",
+			"example": "ex:'asd@mail.ru'",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"email_password": {
+			"type": "string",
+			"example": "ex:'asdasdas'",
+			"required": true,
+			"path": false,
+			"output": false
+		}
+	},
+	"func_params": {
+		"subject": {
+			"type": "string",
+			"example": "ex:'title'",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"from_date_time": {
+			"type": "string",
+			"example": "ex:'2022-03-1000:00:00'",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"till_date_time": {
+			"type": "string",
+			"example": "ex:'2022-03-1001:00:00'",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"from_address": {
+			"type": "string",
+			"example": "ex:'aristan2797@gmail.com'",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"regex_subject": {
+			"type": "boolean",
+			"example": "ex:true",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"save_attachment_path": {
+			"type": "string",
+			"example": "ex:'c:\\path\\folder'",
+			"required": false,
+			"path": true,
+			"output": false
+		},
+		"search_in_last_n_mails": {
+			"type": "number",
+			"example": "ex:10",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"imap_server": {
+			"type": "string",
+			"example": "ex:'imap.gmail.com'",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"mails_from": {
+			"type": "string",
+			"example": "ex:'INBOX'",
+			"required": false,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "condition",
+	"additional_info": {
+		"inheritance": false
+	}
+}

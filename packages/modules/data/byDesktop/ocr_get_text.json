@@ -1,0 +1,95 @@
+{
+	"name": "find",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "byDesktop",
+	"function": "ocr_get_texts",
+	"class_params": {
+		"selector": {
+			"type": "list",
+			"example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"regexp": {
+			"type": "boolean",
+			"example": "ex:true",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"iteration": {
+			"type": "number",
+			"example": "ex:0",
+			"required": true,
+			"path": false,
+			"output": false
+		}
+	},
+	"func_params": {
+		"langs": {
+			"type": "list",
+			"example": "ex:['eng','rus']note:languagesshouldbeinstalledintesseract",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"image_scaling": {
+			"type": "number",
+			"example": "ex:2",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"set_area_width": {
+			"type": "list",
+			"example": "ex:[1,10]note:minis1,maxis10",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"set_area_height": {
+			"type": "list",
+			"example": "ex:[1,10]note:minis1,maxis10",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"tesseract_path": {
+			"type": "string",
+			"example": "ex:'c:\\tesseract.exe'",
+			"required": false,
+			"path": true,
+			"output": false
+		},
+		"wait_appear": {
+			"type": "number",
+			"example": "ex:10",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"set_focus": {
+			"type": "boolean",
+			"example": "ex:true",
+			"required": false,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "finish",
+	"additional_info": {
+		"inheritance": true
+	}
+}

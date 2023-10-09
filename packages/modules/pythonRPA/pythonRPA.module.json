@@ -1,0 +1,6727 @@
+[
+    {
+        "name": "open_sheet",
+        "class_params": {},
+        "func_params": {
+            "keys": {
+                "type": "string",
+                "example": "ex:'enter'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "timing_after": {
+                "type": "float",
+                "example": "ex:0.1",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "timing_before": {
+                "type": "float",
+                "example": "ex:0.1",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "n_time": {
+                "type": "number",
+                "example": "ex:1",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "PyGoogleSheet",
+        "functionName": "open_sheet"
+    },
+    {
+        "name": "clear",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'win[0]'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "timeout": {
+                "type": "number",
+                "example": "ex:30",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_before": {
+                "type": "number",
+                "example": "ex:0",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:0",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "SAP",
+        "functionName": "clear"
+    },
+    {
+        "name": "click",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'win[0]'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "timeout": {
+                "type": "number",
+                "example": "ex:30",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_before": {
+                "type": "number",
+                "example": "ex:0",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:0",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "SAP",
+        "functionName": "click"
+    },
+    {
+        "name": "double_click",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'win[0]'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "timeout": {
+                "type": "number",
+                "example": "ex:30",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_before": {
+                "type": "number",
+                "example": "ex:0",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:0",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "SAP",
+        "functionName": "double_click"
+    },
+    {
+        "name": "get_attribute",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'win[0]'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "name": {
+                "type": "string",
+                "example": "ex:'type'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "timeout": {
+                "type": "number",
+                "example": "ex:30",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_before": {
+                "type": "number",
+                "example": "ex:0",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "SAP",
+        "functionName": "get_attribute"
+    },
+    {
+        "name": "get_connection",
+        "class_params": {},
+        "func_params": {
+            "connection_index": {
+                "type": "number",
+                "example": "ex:0",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "SAP",
+        "functionName": "get_connection"
+    },
+    {
+        "name": "get_text",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'win[0]'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "timeout": {
+                "type": "number",
+                "example": "ex:30",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_before": {
+                "type": "number",
+                "example": "ex:0",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "SAP",
+        "functionName": "get_text"
+    },
+    {
+        "name": "is_exists",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'win[0]'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "delay_before": {
+                "type": "number",
+                "example": "ex:0",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "SAP",
+        "functionName": "is_exists"
+    },
+    {
+        "name": "open_connection",
+        "class_params": {},
+        "func_params": {
+            "base_name": {
+                "type": "string",
+                "example": "ex:'Q2Rsapbase'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "SAP",
+        "functionName": "open_connection"
+    },
+    {
+        "name": "right_click",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'win[0]'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "timeout": {
+                "type": "number",
+                "example": "ex:30",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_before": {
+                "type": "number",
+                "example": "ex:0",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:0",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "SAP",
+        "functionName": "right_click"
+    },
+    {
+        "name": "send_keys",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'win[0]'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "value": {
+                "type": "string",
+                "example": "ex:'somestring'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "timeout": {
+                "type": "number",
+                "example": "ex:30",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_before": {
+                "type": "number",
+                "example": "ex:0",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:0",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "SAP",
+        "functionName": "send_keys"
+    },
+    {
+        "name": "set_text",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'win[0]'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "value": {
+                "type": "string",
+                "example": "ex:'somestring'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "timeout": {
+                "type": "number",
+                "example": "ex:30",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_before": {
+                "type": "number",
+                "example": "ex:0",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:0",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "SAP",
+        "functionName": "set_text"
+    },
+    {
+        "name": "wait_element",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'win[0]'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "timeout": {
+                "type": "number",
+                "example": "ex:30",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_before": {
+                "type": "number",
+                "example": "ex:0",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "SAP",
+        "functionName": "wait_element"
+    },
+    {
+        "name": "string capitalize",
+        "class_params": {},
+        "func_params": {
+            "string": {
+                "type": "string",
+                "example": "ex:'text'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "String",
+        "functionName": "capitalize"
+    },
+    {
+        "name": "string decode",
+        "class_params": {},
+        "func_params": {
+            "string": {
+                "type": "string",
+                "example": "ex:b'text'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "encoding": {
+                "type": "string",
+                "example": "ex:'utf-8'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "String",
+        "functionName": "decode"
+    },
+    {
+        "name": "string encode",
+        "class_params": {},
+        "func_params": {
+            "string": {
+                "type": "string",
+                "example": "ex:'text'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "encoding": {
+                "type": "string",
+                "example": "ex:'utf-8'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "String",
+        "functionName": "encode"
+    },
+    {
+        "name": "string format",
+        "class_params": {},
+        "func_params": {
+            "string": {
+                "type": "string",
+                "example": "ex:'text'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "args": {
+                "type": "list",
+                "example": "ex:'['a','b']'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "kwargs": {
+                "type": "dict",
+                "example": "ex:'{'1':'a','2':'b'}'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "String",
+        "functionName": "format"
+    },
+    {
+        "name": "string index",
+        "class_params": {},
+        "func_params": {
+            "string": {
+                "type": "string",
+                "example": "ex:'text'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "sub": {
+                "type": "string",
+                "example": "ex:'e'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "start": {
+                "type": "number",
+                "example": "ex:0",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end": {
+                "type": "number",
+                "example": "ex:-1",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "String",
+        "functionName": "index"
+    },
+    {
+        "name": "string join",
+        "class_params": {},
+        "func_params": {
+            "string": {
+                "type": "string",
+                "example": "ex:','",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "args": {
+                "type": "list",
+                "example": "ex:['a','b']",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "String",
+        "functionName": "join"
+    },
+    {
+        "name": "string lower",
+        "class_params": {},
+        "func_params": {
+            "string": {
+                "type": "string",
+                "example": "ex:'Text'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "String",
+        "functionName": "lower"
+    },
+    {
+        "name": "string replace",
+        "class_params": {},
+        "func_params": {
+            "string": {
+                "type": "string",
+                "example": "ex:'Text'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "old": {
+                "type": "string",
+                "example": "ex:'xt'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "new": {
+                "type": "string",
+                "example": "ex:'st'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "count": {
+                "type": "number",
+                "example": "ex:-1",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "String",
+        "functionName": "replace"
+    },
+    {
+        "name": "string split",
+        "class_params": {},
+        "func_params": {
+            "string": {
+                "type": "string",
+                "example": "ex:'Text'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "sep": {
+                "type": "string",
+                "example": "ex:'xt'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "maxsplit": {
+                "type": "number",
+                "example": "ex:-1",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "String",
+        "functionName": "split"
+    },
+    {
+        "name": "string strip",
+        "class_params": {},
+        "func_params": {
+            "string": {
+                "type": "string",
+                "example": "ex:'Text'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "chars": {
+                "type": "string",
+                "example": "ex:''",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "String",
+        "functionName": "strip"
+    },
+    {
+        "name": "string upper",
+        "class_params": {},
+        "func_params": {
+            "string": {
+                "type": "string",
+                "example": "ex:'text'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "String",
+        "functionName": "upper"
+    },
+    {
+        "name": "alert",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {
+            "text": {
+                "type": "string",
+                "example": "ex:'asdasd'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "timeout": {
+                "type": "float",
+                "example": "ex:5,5",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "Web",
+        "functionName": "alert"
+    },
+    {
+        "name": "back",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "back",
+        "functionName": "get"
+    },
+    {
+        "name": "close",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "Web",
+        "functionName": "close"
+    },
+    {
+        "name": "current_url",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "Web",
+        "functionName": "current_url"
+    },
+    {
+        "name": "current_window_handle",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "Web",
+        "functionName": "current_window_handle"
+    },
+    {
+        "name": "execute_async_script",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {
+            "script": {
+                "type": "string",
+                "example": "ex:'asdasdas'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "args": {
+                "type": "list",
+                "example": "ex:[]",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "Web",
+        "functionName": "execute_async_script"
+    },
+    {
+        "name": "execute_script",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {
+            "script": {
+                "type": "string",
+                "example": "ex:'asdasdas'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "args": {
+                "type": "list",
+                "example": "ex:[]",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "Web",
+        "functionName": "execute_script"
+    },
+    {
+        "name": "find_element",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "timeout": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "until_not": {
+                "type": "boolean",
+                "example": "ex:false",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "event": {
+                "type": "string",
+                "example": "ex:'presence_of_element_located'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "Web",
+        "functionName": "find_element"
+    },
+    {
+        "name": "find_elements",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "timeout": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "until_not": {
+                "type": "boolean",
+                "example": "ex:false",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "event": {
+                "type": "string",
+                "example": "ex:'presence_of_element_located'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "Web",
+        "functionName": "find_elements"
+    },
+    {
+        "name": "focus",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {
+            "index": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "frame": {
+                "type": "string",
+                "example": "ex:'asdasd'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "f_index": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "Web",
+        "functionName": "focus"
+    },
+    {
+        "name": "forward",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "Web",
+        "functionName": "forward"
+    },
+    {
+        "name": "open url",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {
+            "url": {
+                "type": "string",
+                "example": "ex:'asd/asd/asd'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "Web",
+        "functionName": "get"
+    },
+    {
+        "name": "maximize_window",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "Web",
+        "functionName": "maximize_window"
+    },
+    {
+        "name": "minimize_window",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "Web",
+        "functionName": "minimize_window"
+    },
+    {
+        "name": "open web browser",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {
+            "name": {
+                "type": "string",
+                "example": "ex:'browser_1'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "Web",
+        "functionName": "open_browser"
+    },
+    {
+        "name": "quit",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "Web",
+        "functionName": "quit"
+    },
+    {
+        "name": "save_screenshot",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {
+            "filename": {
+                "type": "string",
+                "example": "ex:'c:\\path\\'",
+                "required": true,
+                "path": true,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "Web",
+        "functionName": "save_screenshot"
+    },
+    {
+        "name": "title",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "Web",
+        "functionName": "title"
+    },
+    {
+        "name": "wait_element",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "timeout": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "until_not": {
+                "type": "boolean",
+                "example": "ex:false",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "event": {
+                "type": "string",
+                "example": "ex:'presence_of_element_located'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "Web",
+        "functionName": "wait_element"
+    },
+    {
+        "name": "window_handles",
+        "class_params": {
+            "driver_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "download_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "Web",
+        "functionName": "window_handles"
+    },
+    {
+        "name": "clear",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "driver": {
+                "type": "string",
+                "example": "ex:'driver1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "delay_before": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "WebElement",
+        "functionName": "clear"
+    },
+    {
+        "name": "click",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "driver": {
+                "type": "string",
+                "example": "ex:'driver1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "delay_before": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "scroll": {
+                "type": "boolean",
+                "example": "ex:false",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "WebElement",
+        "functionName": "click"
+    },
+    {
+        "name": "deselect_all",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "driver": {
+                "type": "string",
+                "example": "ex:'driver1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "delay_before": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "WebElement",
+        "functionName": "deselect_all"
+    },
+    {
+        "name": "deselect_by_index",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "driver": {
+                "type": "string",
+                "example": "ex:'driver1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "index": {
+                "type": "number",
+                "example": "ex:1",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "delay_before": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "WebElement",
+        "functionName": "deselect_by_index"
+    },
+    {
+        "name": "deselect_by_value",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "driver": {
+                "type": "string",
+                "example": "ex:'driver1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "value": {
+                "type": "string",
+                "example": "ex:'asdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "delay_before": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "WebElement",
+        "functionName": "deselect_by_value"
+    },
+    {
+        "name": "deselect_by_visible_text",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "driver": {
+                "type": "string",
+                "example": "ex:'driver1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "text": {
+                "type": "string",
+                "example": "ex:'asdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "delay_before": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "WebElement",
+        "functionName": "deselect_by_visible_text"
+    },
+    {
+        "name": "double_click",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "driver": {
+                "type": "string",
+                "example": "ex:'driver1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "delay_before": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "scroll": {
+                "type": "boolean",
+                "example": "ex:false",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "WebElement",
+        "functionName": "double_click"
+    },
+    {
+        "name": "find_element",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "driver": {
+                "type": "string",
+                "example": "ex:'driver1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "timeout": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "until_not": {
+                "type": "boolean",
+                "example": "ex:false",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "event": {
+                "type": "string",
+                "example": "ex:'presence_of_element_located'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "WebElement",
+        "functionName": "find_element"
+    },
+    {
+        "name": "find_elements",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "driver": {
+                "type": "string",
+                "example": "ex:'driver1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "timeout": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "until_not": {
+                "type": "boolean",
+                "example": "ex:false",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "event": {
+                "type": "string",
+                "example": "ex:'presence_of_element_located'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "WebElement",
+        "functionName": "find_elements"
+    },
+    {
+        "name": "get_attribute",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "driver": {
+                "type": "string",
+                "example": "ex:'driver1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "name": {
+                "type": "string",
+                "example": "ex:'asdasdas'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "delay_before": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "WebElement",
+        "functionName": "get_attribute"
+    },
+    {
+        "name": "get_text",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "driver": {
+                "type": "string",
+                "example": "ex:'driver1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "delay_before": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "WebElement",
+        "functionName": "get_text"
+    },
+    {
+        "name": "right_click",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "driver": {
+                "type": "string",
+                "example": "ex:'driver1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "delay_before": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "scroll": {
+                "type": "boolean",
+                "example": "ex:false",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "WebElement",
+        "functionName": "right_click"
+    },
+    {
+        "name": "scroll",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "driver": {
+                "type": "string",
+                "example": "ex:'driver1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "delay_before": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "WebElement",
+        "functionName": "scroll"
+    },
+    {
+        "name": "select_by_index",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "driver": {
+                "type": "string",
+                "example": "ex:'driver1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "index": {
+                "type": "number",
+                "example": "ex:1",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "delay_before": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "WebElement",
+        "functionName": "select_by_index"
+    },
+    {
+        "name": "select_by_value",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "driver": {
+                "type": "string",
+                "example": "ex:'driver1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "value": {
+                "type": "string",
+                "example": "ex:'asdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "delay_before": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "WebElement",
+        "functionName": "select_by_value"
+    },
+    {
+        "name": "select_by_visible_text",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "driver": {
+                "type": "string",
+                "example": "ex:'driver1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "text": {
+                "type": "string",
+                "example": "ex:'asdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "delay_before": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "WebElement",
+        "functionName": "select_by_visible_text"
+    },
+    {
+        "name": "send_keys",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "driver": {
+                "type": "string",
+                "example": "ex:'driver1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "keys": {
+                "type": "list",
+                "example": "ex:['enter','control']",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "delay_before": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "clear": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "WebElement",
+        "functionName": "send_keys"
+    },
+    {
+        "name": "set_value",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "driver": {
+                "type": "string",
+                "example": "ex:'driver1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "value": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "delay_before": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delay_after": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "click_flag": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "WebElement",
+        "functionName": "set_value"
+    },
+    {
+        "name": "wait_element",
+        "class_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "driver": {
+                "type": "string",
+                "example": "ex:'driver1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "selector": {
+                "type": "string",
+                "example": "ex:'asdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "by": {
+                "type": "string",
+                "example": "ex:'xpath'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "timeout": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "until_not": {
+                "type": "boolean",
+                "example": "ex:false",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "event": {
+                "type": "string",
+                "example": "ex:'presence_of_element_located'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "WebElement",
+        "functionName": "wait_element"
+    },
+    {
+        "name": "word_read",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'C:/User/example.doc'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "first_word": {
+                "type": "string",
+                "example": "ex:'helloworld'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "second_word": {
+                "type": "string",
+                "example": "ex'goodbyeworld'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "Word",
+        "functionName": "word_read"
+    },
+    {
+        "name": "word_replace",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'C:/User/example.doc'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "old_text": {
+                "type": "string",
+                "example": "ex:'asdfasdfasdf'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "new_text": {
+                "type": "string",
+                "example": "ex:'asdfasdfasdf'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "positions_to_replace": {
+                "type": "list",
+                "example": "ex[1,2,3]",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "Word",
+        "functionName": "word_replace"
+    },
+    {
+        "name": "word_write",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'C:/User/example.doc'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "already_created": {
+                "type": "boolean",
+                "example": "ex:True",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "text_to_write": {
+                "type": "string",
+                "example": "ex:'asdfasdfasdf'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "Word",
+        "functionName": "word_write"
+    },
+    {
+        "name": "kill process",
+        "class_params": {
+            "path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.txt'",
+                "required": true,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {
+            "process_name": {
+                "type": "string",
+                "example": "ex:'python'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "application",
+        "functionName": "kill"
+    },
+    {
+        "name": "start application",
+        "class_params": {
+            "path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.txt'",
+                "required": true,
+                "path": true,
+                "output": false
+            }
+        },
+        "func_params": {
+            "timeout": {
+                "type": "number",
+                "example": "ex:5",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "application",
+        "functionName": "start"
+    },
+    {
+        "name": "change selector",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "change_selector"
+    },
+    {
+        "name": "find",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "wait_appear": {
+                "type": "float",
+                "example": "ex:1.2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_focus": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "click"
+    },
+    {
+        "name": "click without mouse",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "wait_appear": {
+                "type": "float",
+                "example": "ex:1.2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_focus": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "click_without_mouse"
+    },
+    {
+        "name": "close",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "wait_appear": {
+                "type": "float",
+                "example": "ex:1.2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_focus": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "close"
+    },
+    {
+        "name": "double click",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "wait_appear": {
+                "type": "float",
+                "example": "ex:1.2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_focus": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "double_click"
+    },
+    {
+        "name": "drag mouse",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "wait_appear": {
+                "type": "float",
+                "example": "ex:1.2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_focus": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "drag_mouse"
+    },
+    {
+        "name": "draw outline",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "wait_appear": {
+                "type": "float",
+                "example": "ex:1.2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_focus": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "draw_outline"
+    },
+    {
+        "name": "find",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "selector_of_in_element": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "find"
+    },
+    {
+        "name": "get list objs",
+        "class_params": {},
+        "func_params": {},
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "get_list_objs"
+    },
+    {
+        "name": "find",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "get_selector"
+    },
+    {
+        "name": "find",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "wait_appear": {
+                "type": "float",
+                "example": "ex:1.2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_focus": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "get_value"
+    },
+    {
+        "name": "is exists",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "is_exists"
+    },
+    {
+        "name": "maximize",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "wait_appear": {
+                "type": "float",
+                "example": "ex:1.2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_focus": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "maximize"
+    },
+    {
+        "name": "middle click",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "wait_appear": {
+                "type": "float",
+                "example": "ex:1.2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_focus": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "middle_click"
+    },
+    {
+        "name": "minimize",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "wait_appear": {
+                "type": "float",
+                "example": "ex:1.2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_focus": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "minimize"
+    },
+    {
+        "name": "find",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "iteration": {
+                "type": "number",
+                "example": "ex:0",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "langs": {
+                "type": "list",
+                "example": "ex:['eng','rus']note:languagesshouldbeinstalledintesseract",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "image_scaling": {
+                "type": "number",
+                "example": "ex:2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_area_width": {
+                "type": "list",
+                "example": "ex:[1,10]note:minis1,maxis10",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_area_height": {
+                "type": "list",
+                "example": "ex:[1,10]note:minis1,maxis10",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "tesseract_path": {
+                "type": "string",
+                "example": "ex:'c:\\tesseract.exe'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "wait_appear": {
+                "type": "number",
+                "example": "ex:10",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_focus": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "ocr_get_texts"
+    },
+    {
+        "name": "find",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "iteration": {
+                "type": "number",
+                "example": "ex:0",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "text": {
+                "type": "string",
+                "example": "ex:'asdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "langs": {
+                "type": "list",
+                "example": "ex:['eng','rus']note:languagesshouldbeinstalledintesseract",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "image_scaling": {
+                "type": "number",
+                "example": "ex:2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_area_width": {
+                "type": "list",
+                "example": "ex:[1,10]note:minis1,maxis10",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_area_height": {
+                "type": "list",
+                "example": "ex:[1,10]note:minis1,maxis10",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "tesseract_path": {
+                "type": "string",
+                "example": "ex:'c:\\tesseract.exe'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "wait_appear": {
+                "type": "number",
+                "example": "ex:10",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_focus": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "ocr_text_click"
+    },
+    {
+        "name": "right_click",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "wait_appear": {
+                "type": "float",
+                "example": "ex:1.2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_focus": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "right_click"
+    },
+    {
+        "name": "scroll",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "direction": {
+                "type": "string",
+                "example": "ex:'up'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "amount": {
+                "type": "number",
+                "example": "ex:4",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "wait_appear": {
+                "type": "float",
+                "example": "ex:1.2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_focus": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "scroll"
+    },
+    {
+        "name": "select",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "wait_appear": {
+                "type": "float",
+                "example": "ex:1.2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_focus": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "select"
+    },
+    {
+        "name": "set edit text",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "text": {
+                "type": "string",
+                "example": "ex:'asdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "wait_appear": {
+                "type": "float",
+                "example": "ex:1.2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_focus": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "set_edit_text"
+    },
+    {
+        "name": "set focus",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "set_focus"
+    },
+    {
+        "name": "set text",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "text": {
+                "type": "string",
+                "example": "ex:'asdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "wait_appear": {
+                "type": "float",
+                "example": "ex:1.2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_focus": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "set_text"
+    },
+    {
+        "name": "set window text",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "text": {
+                "type": "string",
+                "example": "ex:'asdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "wait_appear": {
+                "type": "float",
+                "example": "ex:1.2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_focus": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "set_window_text"
+    },
+    {
+        "name": "texts",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "wait_appear": {
+                "type": "float",
+                "example": "ex:1.2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "set_focus": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "texts"
+    },
+    {
+        "name": "wait appear",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "sec": {
+                "type": "float",
+                "example": "ex:1.2",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "wait_appear"
+    },
+    {
+        "name": "wait disappear",
+        "class_params": {
+            "selector": {
+                "type": "list",
+                "example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "regexp": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "sec": {
+                "type": "float",
+                "example": "ex:1.2",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": true
+        },
+        "className": "byDesktop",
+        "functionName": "wait_disappear"
+    },
+    {
+        "name": "attributes",
+        "class_params": {
+            "image_path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "confidence": {
+                "type": "float",
+                "example": "ex:0.9",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "greyscale": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "byImage",
+        "functionName": "attrs"
+    },
+    {
+        "name": "click",
+        "class_params": {
+            "image_path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "confidence": {
+                "type": "float",
+                "example": "ex:0.9",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "greyscale": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "byImage",
+        "functionName": "click"
+    },
+    {
+        "name": "double click",
+        "class_params": {
+            "image_path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "confidence": {
+                "type": "float",
+                "example": "ex:0.9",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "greyscale": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "byImage",
+        "functionName": "double_click"
+    },
+    {
+        "name": "get current confidence",
+        "class_params": {
+            "image_path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "confidence": {
+                "type": "float",
+                "example": "ex:0.9",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "greyscale": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "byImage",
+        "functionName": "get_current_confidence"
+    },
+    {
+        "name": "get current greyscale",
+        "class_params": {
+            "image_path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "confidence": {
+                "type": "float",
+                "example": "ex:0.9",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "greyscale": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "byImage",
+        "functionName": "get_current_greyscale"
+    },
+    {
+        "name": "get current image",
+        "class_params": {
+            "image_path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "confidence": {
+                "type": "float",
+                "example": "ex:0.9",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "greyscale": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "byImage",
+        "functionName": "get_current_image"
+    },
+    {
+        "name": "is exists",
+        "class_params": {
+            "image_path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "confidence": {
+                "type": "float",
+                "example": "ex:0.9",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "greyscale": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "byImage",
+        "functionName": "is_exists"
+    },
+    {
+        "name": "middle click",
+        "class_params": {
+            "image_path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "confidence": {
+                "type": "float",
+                "example": "ex:0.9",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "greyscale": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "byImage",
+        "functionName": "middle_click"
+    },
+    {
+        "name": "move",
+        "class_params": {
+            "image_path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "confidence": {
+                "type": "float",
+                "example": "ex:0.9",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "greyscale": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "byImage",
+        "functionName": "move"
+    },
+    {
+        "name": "click",
+        "class_params": {
+            "image_path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "confidence": {
+                "type": "float",
+                "example": "ex:0.9",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "greyscale": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "near_image_path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "position": {
+                "type": "string",
+                "example": "ex:'right'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "distance_in_px": {
+                "type": "number",
+                "example": "ex:70",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "byImage",
+        "functionName": "click"
+    },
+    {
+        "name": "right click",
+        "class_params": {
+            "image_path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "confidence": {
+                "type": "float",
+                "example": "ex:0.9",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "greyscale": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "byImage",
+        "functionName": "right_click"
+    },
+    {
+        "name": "set other image",
+        "class_params": {
+            "image_path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "confidence": {
+                "type": "float",
+                "example": "ex:0.9",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "greyscale": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "image_path": {
+                "type": "float",
+                "example": "ex:0.9",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "byImage",
+        "functionName": "set_other_image"
+    },
+    {
+        "name": "set other image",
+        "class_params": {
+            "image_path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "confidence": {
+                "type": "float",
+                "example": "ex:0.9",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "greyscale": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "image_path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "byImage",
+        "functionName": "set_other_image"
+    },
+    {
+        "name": "wait appear",
+        "class_params": {
+            "image_path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "confidence": {
+                "type": "float",
+                "example": "ex:0.9",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "greyscale": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "sec": {
+                "type": "number",
+                "example": "ex:5",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "byImage",
+        "functionName": "wait_appear"
+    },
+    {
+        "name": "wait appear",
+        "class_params": {
+            "image_path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "confidence": {
+                "type": "float",
+                "example": "ex:0.9",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "greyscale": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "sec": {
+                "type": "number",
+                "example": "ex:5",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "byImage",
+        "functionName": "wait_disappear"
+    },
+    {
+        "name": "get from clipboard",
+        "class_params": {},
+        "func_params": {},
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "clipboard",
+        "functionName": "get"
+    },
+    {
+        "name": "set to clipboard",
+        "class_params": {},
+        "func_params": {
+            "value": {
+                "type": "string",
+                "example": "ex:'text'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "clipboard",
+        "functionName": "set"
+    },
+    {
+        "name": "condition_if_else",
+        "class_params": {},
+        "func_params": {
+            "condition": {
+                "type": "string",
+                "example": "ex:'16<11'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "if_case": {
+                "type": "string",
+                "example": "ex:'next_id'",
+                "required": true,
+                "path": false,
+                "output": true
+            },
+            "else_case": {
+                "type": "string",
+                "example": "ex:'next_id'",
+                "required": true,
+                "path": false,
+                "output": true
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "conditions",
+        "functionName": "if_else"
+    },
+    {
+        "name": "condition_switch_case",
+        "class_params": {},
+        "func_params": {
+            "conditions_and_cases": {
+                "type": "list",
+                "example": "ex:{'12==02':'next_id',''13<18':'next_id'}",
+                "required": true,
+                "path": false,
+                "output": true
+            },
+            "else_case": {
+                "type": "string",
+                "example": "ex:'next_id'",
+                "required": false,
+                "path": false,
+                "output": true
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "conditions",
+        "functionName": "switch_case"
+    },
+    {
+        "name": "start scenario in current",
+        "class_params": {},
+        "func_params": {
+            "value": {
+                "type": "string",
+                "required": false,
+                "path": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "core",
+        "functionName": "return_value"
+    },
+    {
+        "name": "start scenario in current",
+        "class_params": {},
+        "func_params": {
+            "robot_json": {
+                "type": "dict",
+                "example": "ex:{}or'C:\\asd\\asd.json'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "robot_path": {
+                "type": "string",
+                "example": "ex:'C:\\asd\\asd.json'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "params": {
+                "type": "dict",
+                "example": "ex:{\"example_var\":\"1\",\"example_var1\":[0,1]}",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "credentials": {
+                "type": "list",
+                "example": "ex:['1ce','asdasd']",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "core",
+        "functionName": "start_scenario"
+    },
+    {
+        "name": "read mail",
+        "class_params": {
+            "email_address": {
+                "type": "string",
+                "example": "ex:'asd@mail.ru'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "email_password": {
+                "type": "string",
+                "example": "ex:'asdasdas'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "subject": {
+                "type": "string",
+                "example": "ex:'title'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "from_date_time": {
+                "type": "string",
+                "example": "ex:'2022-03-1000:00:00'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "till_date_time": {
+                "type": "string",
+                "example": "ex:'2022-03-1001:00:00'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "from_address": {
+                "type": "string",
+                "example": "ex:'aristan2797@gmail.com'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "regex_subject": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "save_attachment_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\folder'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "search_in_last_n_mails": {
+                "type": "number",
+                "example": "ex:10",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "imap_server": {
+                "type": "string",
+                "example": "ex:'imap.gmail.com'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "mails_from": {
+                "type": "string",
+                "example": "ex:'INBOX'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "email",
+        "functionName": "read"
+    },
+    {
+        "name": "send mail",
+        "class_params": {
+            "email_address": {
+                "type": "string",
+                "example": "ex:'asd@mail.ru'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "email_password": {
+                "type": "string",
+                "example": "ex:'asdasdas'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "receivers": {
+                "type": "list",
+                "example": "ex:['qwe@gmail.com','rty@mail.ru']",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "type_of_mail_service": {
+                "type": "string",
+                "example": "ex:'mail.ru",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "subject": {
+                "type": "string",
+                "example": "ex:'title'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "body_txt": {
+                "type": "string",
+                "example": "ex:'afwefadf\nasdasda'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "attached_files": {
+                "type": "list",
+                "example": "ex['c:\\path\\dsa.pdf','e:\\path\\asd.docx']",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "attached_imgs": {
+                "type": "list",
+                "example": "ex['c:\\path\\dsa.png','e:\\path\\asd.jpg']",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "html": {
+                "type": "string",
+                "example": "ex:'<h5>asdasd<\\h5>'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "email",
+        "functionName": "send"
+    },
+    {
+        "name": "go_to",
+        "class_params": {},
+        "func_params": {
+            "except_case": {
+                "type": "string",
+                "example": "ex:'next_id_in_exception'",
+                "required": true,
+                "path": false,
+                "output": true
+            },
+            "after": {
+                "type": "string",
+                "example": "ex:'next_id'",
+                "required": true,
+                "path": false,
+                "output": true
+            },
+            "state": {
+                "initial_state": true
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "errors",
+        "functionName": "go_to"
+    },
+    {
+        "name": "try_except",
+        "class_params": {},
+        "func_params": {
+            "try_case": {
+                "type": "string",
+                "example": "ex:'next_id_in_try'",
+                "required": true,
+                "path": false,
+                "output": true
+            },
+            "except_case": {
+                "type": "string",
+                "example": "ex:'next_id_in_except'",
+                "required": true,
+                "path": false,
+                "output": true
+            },
+            "after": {
+                "type": "string",
+                "example": "ex:'next_id'",
+                "required": true,
+                "path": false,
+                "output": true
+            },
+            "state": {
+                "initial_state": true
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "errors",
+        "functionName": "try_except"
+    },
+    {
+        "name": "add_column",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "sheet_name": {
+                "type": "string",
+                "example": "ex:'sheet1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delimiter": {
+                "type": "string",
+                "example": "ex:';'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "start_column_letter": {
+                "type": "string",
+                "example": "ex:'a'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "amount": {
+                "type": "number",
+                "example": "ex:3",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "excel",
+        "functionName": "add_column"
+    },
+    {
+        "name": "add_row_to_excel",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "sheet_name": {
+                "type": "string",
+                "example": "ex:'sheet1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delimiter": {
+                "type": "string",
+                "example": "ex:';'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "row_number": {
+                "type": "number",
+                "example": "ex:1",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "data": {
+                "type": "list",
+                "example": "ex:[['asd','dsa']]",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "write_start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "excel",
+        "functionName": "add_row_to_excel"
+    },
+    {
+        "name": "add_sheet",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "sheet_name": {
+                "type": "string",
+                "example": "ex:'sheet1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delimiter": {
+                "type": "string",
+                "example": "ex:';'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "sheetname": {
+                "type": "string",
+                "example": "ex:'asdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "excel",
+        "functionName": "add_sheet"
+    },
+    {
+        "name": "remove_sheet",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "sheet_name": {
+                "type": "string",
+                "example": "ex:'sheet1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delimiter": {
+                "type": "string",
+                "example": "ex:';'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": true,
+                "path": true,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "excel",
+        "functionName": "remove_sheet"
+    },
+    {
+        "name": "delete_columns",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "sheet_name": {
+                "type": "string",
+                "example": "ex:'sheet1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delimiter": {
+                "type": "string",
+                "example": "ex:';'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "start_column_letter": {
+                "type": "string",
+                "example": "ex:'a'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "amount": {
+                "type": "number",
+                "example": "ex:3",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "datetime_column": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "is_merged": {
+                "type": "boolean",
+                "example": "false",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "excel",
+        "functionName": "delete_columns"
+    },
+    {
+        "name": "delete_rows",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "sheet_name": {
+                "type": "string",
+                "example": "ex:'sheet1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delimiter": {
+                "type": "string",
+                "example": "ex:';'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "start_row_index": {
+                "type": "number",
+                "example": "ex:1",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "amount": {
+                "type": "number",
+                "example": "ex:3",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": false,
+                "path": true,
+                "output": false
+            },
+            "datetime_column": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "excel",
+        "functionName": "delete_rows"
+    },
+    {
+        "name": "get_address_by_value",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "sheet_name": {
+                "type": "string",
+                "example": "ex:'sheet1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delimiter": {
+                "type": "string",
+                "example": "ex:';'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "data": {
+                "type": "list",
+                "example": "ex:[['asd','dsa']]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "starting_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "ending_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "excel",
+        "functionName": "get_address_by_value"
+    },
+    {
+        "name": "get_address_by_value",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "sheet_name": {
+                "type": "string",
+                "example": "ex:'sheet1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delimiter": {
+                "type": "string",
+                "example": "ex:';'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "starting_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "ending_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "excel",
+        "functionName": "get_address_by_value"
+    },
+    {
+        "name": "get_data",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "sheet_name": {
+                "type": "string",
+                "example": "ex:'sheet1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delimiter": {
+                "type": "string",
+                "example": "ex:';'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "excel",
+        "functionName": "get_data"
+    },
+    {
+        "name": "get_sheets",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "sheet_name": {
+                "type": "string",
+                "example": "ex:'sheet1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delimiter": {
+                "type": "string",
+                "example": "ex:';'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "excel",
+        "functionName": "get_sheets"
+    },
+    {
+        "name": "get_address_by_value",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "sheet_name": {
+                "type": "string",
+                "example": "ex:'sheet1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delimiter": {
+                "type": "string",
+                "example": "ex:';'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "columns": {
+                "type": "list",
+                "example": "ex:[1,2,3]",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "file_name": {
+                "type": "string",
+                "example": "ex:'file1'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "excel",
+        "functionName": "get_address_by_value"
+    },
+    {
+        "name": "get_address_by_value",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "sheet_name": {
+                "type": "string",
+                "example": "ex:'sheet1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delimiter": {
+                "type": "string",
+                "example": "ex:';'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "start_row": {
+                "type": "number",
+                "example": "ex:1",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end_row": {
+                "type": "number",
+                "example": "ex:2",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "file_name": {
+                "type": "string",
+                "example": "ex:'file1'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "excel",
+        "functionName": "get_address_by_value"
+    },
+    {
+        "name": "add_column",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "sheet_name": {
+                "type": "string",
+                "example": "ex:'sheet1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delimiter": {
+                "type": "string",
+                "example": "ex:';'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {},
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "excel",
+        "functionName": "init"
+    },
+    {
+        "name": "read_data",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "sheet_name": {
+                "type": "string",
+                "example": "ex:'sheet1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delimiter": {
+                "type": "string",
+                "example": "ex:';'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "excel",
+        "functionName": "read_data"
+    },
+    {
+        "name": "remove_sheet",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "sheet_name": {
+                "type": "string",
+                "example": "ex:'sheet1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delimiter": {
+                "type": "string",
+                "example": "ex:';'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "sheetname": {
+                "type": "string",
+                "example": "ex:'asdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "excel",
+        "functionName": "remove_sheet"
+    },
+    {
+        "name": "save_data",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "sheet_name": {
+                "type": "string",
+                "example": "ex:'sheet1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delimiter": {
+                "type": "string",
+                "example": "ex:';'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "new_file_name": {
+                "type": "string",
+                "example": "ex:'file1'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "excel",
+        "functionName": "save_data"
+    },
+    {
+        "name": "write_data",
+        "class_params": {
+            "file_path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.asd'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "sheet_name": {
+                "type": "string",
+                "example": "ex:'sheet1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "end_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "delimiter": {
+                "type": "string",
+                "example": "ex:';'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "data": {
+                "type": "list",
+                "example": "ex:[['asd','dsa']]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "write_start_cell": {
+                "type": "string",
+                "example": "ex:'A1'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "date_format": {
+                "type": "string",
+                "example": "ex:'%m/%d/%Y'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "write_end_cell": {
+                "type": "string",
+                "example": "ex:'B2'",
+                "required": false,
+                "path": false,
+                "output": false
+            },
+            "file_name": {
+                "type": "string",
+                "example": "ex:'file1'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "excel",
+        "functionName": "write_data"
+    },
+    {
+        "name": "append to file",
+        "class_params": {},
+        "func_params": {
+            "text": {
+                "type": "string",
+                "example": "ex:'asdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.txt'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "encoding": {
+                "type": "string",
+                "example": "ex:'utf-8'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "file",
+        "functionName": "append"
+    },
+    {
+        "name": "copy_paste",
+        "class_params": {},
+        "func_params": {
+            "path_to_file": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.txt'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "destination_folder": {
+                "type": "string",
+                "example": "ex:'c:\\dst_path'",
+                "required": true,
+                "path": true,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "file",
+        "functionName": "copy_paste"
+    },
+    {
+        "name": "create",
+        "class_params": {},
+        "func_params": {
+            "name": {
+                "type": "string",
+                "example": "ex:'asd.txt'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "file",
+        "functionName": "create"
+    },
+    {
+        "name": "delete file",
+        "class_params": {},
+        "func_params": {
+            "path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.txt'",
+                "required": true,
+                "path": true,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "file",
+        "functionName": "delete"
+    },
+    {
+        "name": "dump to json",
+        "class_params": {},
+        "func_params": {
+            "text": {
+                "type": "string",
+                "example": "ex:'asdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.txt'",
+                "required": true,
+                "path": true,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "file",
+        "functionName": "dump_to_json"
+    },
+    {
+        "name": "load from json",
+        "class_params": {},
+        "func_params": {
+            "path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.json'",
+                "required": true,
+                "path": true,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "file",
+        "functionName": "load_from_json"
+    },
+    {
+        "name": "move",
+        "class_params": {},
+        "func_params": {
+            "path_to_file": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.txt'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "destination_folder": {
+                "type": "string",
+                "example": "ex:'c:\\dst_path'",
+                "required": true,
+                "path": true,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "file",
+        "functionName": "move"
+    },
+    {
+        "name": "append to file",
+        "class_params": {},
+        "func_params": {
+            "text": {
+                "type": "string",
+                "example": "ex:'asdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.txt'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "encoding": {
+                "type": "string",
+                "example": "ex:'utf-8'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "file",
+        "functionName": "overwrite"
+    },
+    {
+        "name": "read file",
+        "class_params": {},
+        "func_params": {
+            "path": {
+                "type": "string",
+                "example": "ex:'c:\\path\\asd.txt'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "encoding": {
+                "type": "string",
+                "example": "ex:'utf-8'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "file",
+        "functionName": "read"
+    },
+    {
+        "name": "copy_paste",
+        "class_params": {},
+        "func_params": {
+            "path_to_folder": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "destination_folder": {
+                "type": "string",
+                "example": "ex:'c:\\dst_path'",
+                "required": true,
+                "path": true,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "folder",
+        "functionName": "copy_paste"
+    },
+    {
+        "name": "create folder",
+        "class_params": {},
+        "func_params": {
+            "name": {
+                "type": "string",
+                "example": "ex:'asd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "folder",
+        "functionName": "append"
+    },
+    {
+        "name": "delete folder",
+        "class_params": {},
+        "func_params": {
+            "path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "folder",
+        "functionName": "delete"
+    },
+    {
+        "name": "iterate directory",
+        "class_params": {},
+        "func_params": {
+            "directory": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "endswith": {
+                "type": "string",
+                "example": "ex:'.txt'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "folder",
+        "functionName": "iterate"
+    },
+    {
+        "name": "move",
+        "class_params": {},
+        "func_params": {
+            "path_to_folder": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "destination_folder": {
+                "type": "string",
+                "example": "ex:'c:\\dst_path'",
+                "required": true,
+                "path": true,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "folder",
+        "functionName": "move"
+    },
+    {
+        "name": "script",
+        "class_params": {},
+        "func_params": {
+            "variable": {
+                "type": "string",
+                "example": "ex:'{{variable1}}'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "value": {
+                "type": "string",
+                "example": "ex:{'a':[1,2,3]}or'{%block_id%}'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "invoce_code",
+        "functionName": "assign_value"
+    },
+    {
+        "name": "script",
+        "class_params": {},
+        "func_params": {
+            "code": {
+                "type": "string",
+                "example": "ex:'print('asd')",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "invoce_code",
+        "functionName": "script"
+    },
+    {
+        "name": "keyboard_write",
+        "class_params": {},
+        "func_params": {
+            "keys": {
+                "type": "string",
+                "example": "ex:'enter'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "timing_after": {
+                "type": "float",
+                "example": "ex:0.1",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "timing_before": {
+                "type": "float",
+                "example": "ex:0.1",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "n_time": {
+                "type": "number",
+                "example": "ex:1",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "keyboard",
+        "functionName": "press"
+    },
+    {
+        "name": "keyboard_write",
+        "class_params": {},
+        "func_params": {
+            "key": {
+                "type": "string",
+                "example": "ex:'enter'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "keyboard",
+        "functionName": "wait"
+    },
+    {
+        "name": "keyboard_write",
+        "class_params": {},
+        "func_params": {
+            "text": {
+                "type": "string",
+                "example": "ex:'asdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "timing_after": {
+                "type": "float",
+                "example": "ex:0.1",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "timing_before": {
+                "type": "float",
+                "example": "ex:0.1",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "timing_between": {
+                "type": "float",
+                "example": "ex:0.1",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "keyboard",
+        "functionName": "write"
+    },
+    {
+        "name": "while",
+        "class_params": {},
+        "func_params": {
+            "condition": {
+                "type": "string",
+                "example": "ex:'16<11'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "else_case": {
+                "type": "string",
+                "example": "ex:'next_id'",
+                "required": true,
+                "path": false,
+                "output": true
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "loop",
+        "functionName": "break_loop"
+    },
+    {
+        "name": "for_each",
+        "class_params": {},
+        "func_params": {
+            "lst": {
+                "type": "list",
+                "example": "ex:['asdasd','dasdas','dsa']or{'a':3,'b':32}",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "true_case": {
+                "type": "string",
+                "example": "ex:'next_id_in_loop'",
+                "required": true,
+                "path": false,
+                "output": true
+            },
+            "false_case": {
+                "type": "string",
+                "example": "ex:'next_id'",
+                "required": true,
+                "path": false,
+                "output": true
+            },
+            "key_name": {
+                "type": "string",
+                "example": "ex:'key'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "value_name": {
+                "type": "string",
+                "example": "ex:'value'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "state": {
+                "iteration": 0,
+                "i": 0,
+                "initial_state": true
+            },
+            "used_glob_var": null
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "loop",
+        "functionName": "for_each"
+    },
+    {
+        "name": "for i in range()",
+        "class_params": {},
+        "func_params": {
+            "range": {
+                "type": "list",
+                "example": "ex:[5,10,2]",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "true_case": {
+                "type": "string",
+                "example": "ex:'next_id_in_loop'",
+                "required": true,
+                "path": false,
+                "output": true
+            },
+            "false_case": {
+                "type": "string",
+                "example": "ex:'next_id'",
+                "required": true,
+                "path": false,
+                "output": true
+            },
+            "index_name": {
+                "type": "string",
+                "example": "ex:'i'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "state": {
+                "iteration": 0,
+                "i": 0,
+                "initial_state": true
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "loop",
+        "functionName": "for_i"
+    },
+    {
+        "name": "while",
+        "class_params": {},
+        "func_params": {
+            "condition": {
+                "type": "string",
+                "example": "ex:'32<42'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "true_case": {
+                "type": "string",
+                "example": "ex:'next_id_in_loop'",
+                "required": true,
+                "path": false,
+                "output": true
+            },
+            "false_case": {
+                "type": "string",
+                "example": "ex:'next_id'",
+                "required": true,
+                "path": false,
+                "output": true
+            },
+            "state": {
+                "iteration": 0
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "loop",
+        "functionName": "loop_while"
+    },
+    {
+        "name": "mouse click",
+        "class_params": {
+            "image_path": {
+                "type": "string",
+                "example": "ex:'c:\\path'",
+                "required": true,
+                "path": true,
+                "output": false
+            },
+            "confidence": {
+                "type": "float",
+                "example": "ex:0.9",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "greyscale": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "func_params": {
+            "x": {
+                "type": "number",
+                "example": "ex:1920",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "y": {
+                "type": "number",
+                "example": "ex:1080",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "clicks": {
+                "type": "number",
+                "example": "ex:1",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "interval": {
+                "type": "float",
+                "example": "ex:0.1",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "button": {
+                "type": "string",
+                "example": "ex:'left'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "duration": {
+                "type": "float",
+                "example": "ex:0.1",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "pause": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "mouse",
+        "functionName": "click"
+    },
+    {
+        "name": "mouse double click",
+        "class_params": {},
+        "func_params": {
+            "x": {
+                "type": "number",
+                "example": "ex:1920",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "y": {
+                "type": "number",
+                "example": "ex:1080",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "interval": {
+                "type": "float",
+                "example": "ex:0.1",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "button": {
+                "type": "string",
+                "example": "ex:'left'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "duration": {
+                "type": "float",
+                "example": "ex:0.1",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "mouse",
+        "functionName": "double_click"
+    },
+    {
+        "name": "mouse click",
+        "class_params": {},
+        "func_params": {
+            "x": {
+                "type": "number",
+                "example": "ex:1920",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "y": {
+                "type": "number",
+                "example": "ex:1080",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "duration": {
+                "type": "float",
+                "example": "ex:0.1",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "mouse",
+        "functionName": "drag"
+    },
+    {
+        "name": "mouse click",
+        "class_params": {},
+        "func_params": {
+            "x": {
+                "type": "number",
+                "example": "ex:1920",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "y": {
+                "type": "number",
+                "example": "ex:1080",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "mouse",
+        "functionName": "move_to"
+    },
+    {
+        "name": "mouse click",
+        "class_params": {},
+        "func_params": {
+            "x": {
+                "type": "number",
+                "example": "ex:1920",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "y": {
+                "type": "number",
+                "example": "ex:1080",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "clicks": {
+                "type": "number",
+                "example": "ex:1",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "pause": {
+                "type": "boolean",
+                "example": "ex:true",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "mouse",
+        "functionName": "scroll"
+    },
+    {
+        "name": "delay",
+        "class_params": {},
+        "func_params": {
+            "sec": {
+                "type": "number",
+                "example": "ex:1",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "time",
+        "functionName": "delay"
+    },
+    {
+        "name": "time now",
+        "class_params": {},
+        "func_params": {},
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "time",
+        "functionName": "now"
+    },
+    {
+        "name": "alert msg",
+        "class_params": {},
+        "func_params": {
+            "msg": {
+                "type": "string",
+                "example": "ex:'asdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "window",
+        "functionName": "alert"
+    },
+    {
+        "name": "confirm msg",
+        "class_params": {},
+        "func_params": {
+            "msg": {
+                "type": "string",
+                "example": "ex:'asdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "window",
+        "functionName": "confirm"
+    },
+    {
+        "name": "confirm with options",
+        "class_params": {},
+        "func_params": {
+            "msg": {
+                "type": "string",
+                "example": "ex:'asdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "btn_list": {
+                "type": "list",
+                "example": "ex:['a','b','c']",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "window",
+        "functionName": "confirm_with_options"
+    },
+    {
+        "name": "password msg",
+        "class_params": {},
+        "func_params": {
+            "msg": {
+                "type": "string",
+                "example": "ex:'asdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "window",
+        "functionName": "password"
+    },
+    {
+        "name": "prompt msg",
+        "class_params": {},
+        "func_params": {
+            "msg": {
+                "type": "string",
+                "example": "ex:'asdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "window",
+        "functionName": "prompt"
+    },
+    {
+        "name": "screenshot",
+        "class_params": {},
+        "func_params": {
+            "photo_path": {
+                "type": "string",
+                "example": "ex:'asdasdasd'",
+                "required": true,
+                "path": false,
+                "output": false
+            },
+            "photo_name": {
+                "type": "string",
+                "example": "ex:'asdasdasd'",
+                "required": false,
+                "path": false,
+                "output": false
+            }
+        },
+        "additional_info": {
+            "inheritance": false
+        },
+        "className": "window",
+        "functionName": "screenshot"
+    }
+]

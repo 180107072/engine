@@ -1,0 +1,95 @@
+{
+	"name": "mouse click",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "mouse",
+	"function": "click",
+	"class_params": {
+		"image_path": {
+			"type": "string",
+			"example": "ex:'c:\\path'",
+			"required": true,
+			"path": true,
+			"output": false
+		},
+		"confidence": {
+			"type": "float",
+			"example": "ex:0.9",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"greyscale": {
+			"type": "boolean",
+			"example": "ex:true",
+			"required": true,
+			"path": false,
+			"output": false
+		}
+	},
+	"func_params": {
+		"x": {
+			"type": "number",
+			"example": "ex:1920",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"y": {
+			"type": "number",
+			"example": "ex:1080",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"clicks": {
+			"type": "number",
+			"example": "ex:1",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"interval": {
+			"type": "float",
+			"example": "ex:0.1",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"button": {
+			"type": "string",
+			"example": "ex:'left'",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"duration": {
+			"type": "float",
+			"example": "ex:0.1",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"pause": {
+			"type": "boolean",
+			"example": "ex:true",
+			"required": false,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "finish",
+	"additional_info": {
+		"inheritance": false
+	}
+}

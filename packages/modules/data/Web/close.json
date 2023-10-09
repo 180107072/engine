@@ -1,0 +1,38 @@
+{
+	"name": "close",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "Web",
+	"function": "close",
+	"class_params": {
+		"driver_path": {
+			"type": "string",
+			"example": "ex:'c:\\path\\asd.asd'",
+			"required": false,
+			"path": true,
+			"output": false
+		},
+		"download_path": {
+			"type": "string",
+			"example": "ex:'c:\\path\\asd.asd'",
+			"required": false,
+			"path": true,
+			"output": false
+		}
+	},
+	"func_params": {},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "finish",
+	"additional_info": {
+		"inheritance": true
+	}
+}

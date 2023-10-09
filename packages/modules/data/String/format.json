@@ -1,0 +1,45 @@
+{
+	"name": "string format",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "String",
+	"function": "format",
+	"class_params": {},
+	"func_params": {
+		"string": {
+			"type": "string",
+			"example": "ex:'text'",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"args": {
+			"type": "list",
+			"example": "ex:'['a','b']'",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"kwargs": {
+			"type": "dict",
+			"example": "ex:'{'1':'a','2':'b'}'",
+			"required": false,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "finish",
+	"additional_info": {
+		"inheritance": false
+	}
+}

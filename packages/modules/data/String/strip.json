@@ -1,0 +1,38 @@
+{
+	"name": "string strip",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "String",
+	"function": "strip",
+	"class_params": {},
+	"func_params": {
+		"string": {
+			"type": "string",
+			"example": "ex:'Text'",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"chars": {
+			"type": "string",
+			"example": "ex:''",
+			"required": false,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "finish",
+	"additional_info": {
+		"inheritance": false
+	}
+}

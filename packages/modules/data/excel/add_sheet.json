@@ -1,0 +1,67 @@
+{
+	"name": "add_sheet",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "excel",
+	"function": "add_sheet",
+	"class_params": {
+		"file_path": {
+			"type": "string",
+			"example": "ex:'c:\\path\\asd.asd'",
+			"required": true,
+			"path": true,
+			"output": false
+		},
+		"sheet_name": {
+			"type": "string",
+			"example": "ex:'sheet1'",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"start_cell": {
+			"type": "string",
+			"example": "ex:'A1'",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"end_cell": {
+			"type": "string",
+			"example": "ex:'B2'",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"delimiter": {
+			"type": "string",
+			"example": "ex:';'",
+			"required": false,
+			"path": false,
+			"output": false
+		}
+	},
+	"func_params": {
+		"sheetname": {
+			"type": "string",
+			"example": "ex:'asdasd'",
+			"required": true,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "finish",
+	"additional_info": {
+		"inheritance": false
+	}
+}

@@ -1,0 +1,14 @@
+{
+    "results": null,
+    "object": null,
+    "inherit_object": null,
+    "module": "pyPythonRPA.Robot.pythonRPA",
+    "breakpoint": false,
+    "if_error": {
+        "go_to": "block_id",
+        "repeat": 1,
+        "counter": 0
+    },
+    "start": false,
+    "next_id": "finish"
+}

@@ -1,0 +1,38 @@
+{
+	"name": "move",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "file",
+	"function": "move",
+	"class_params": {},
+	"func_params": {
+		"path_to_file": {
+			"type": "string",
+			"example": "ex:'c:\\path\\asd.txt'",
+			"required": true,
+			"path": true,
+			"output": false
+		},
+		"destination_folder": {
+			"type": "string",
+			"example": "ex:'c:\\dst_path'",
+			"required": true,
+			"path": true,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "condition",
+	"additional_info": {
+		"inheritance": false
+	}
+}

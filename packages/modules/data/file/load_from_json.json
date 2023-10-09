@@ -1,0 +1,31 @@
+{
+	"name": "load from json",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "file",
+	"function": "load_from_json",
+	"class_params": {},
+	"func_params": {
+		"path": {
+			"type": "string",
+			"example": "ex:'c:\\path\\asd.json'",
+			"required": true,
+			"path": true,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "condition",
+	"additional_info": {
+		"inheritance": false
+	}
+}

@@ -1,0 +1,74 @@
+{
+	"name": "send_keys",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "WebElement",
+	"function": "send_keys",
+	"class_params": {
+		"selector": {
+			"type": "string",
+			"example": "ex:'asdasdasdasd'",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"driver": {
+			"type": "string",
+			"example": "ex:'driver1'",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"by": {
+			"type": "string",
+			"example": "ex:'xpath'",
+			"required": true,
+			"path": false,
+			"output": false
+		}
+	},
+	"func_params": {
+		"keys": {
+			"type": "list",
+			"example": "ex:['enter','control']",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"delay_before": {
+			"type": "number",
+			"example": "ex:1",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"delay_after": {
+			"type": "number",
+			"example": "ex:1",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"clear": {
+			"type": "boolean",
+			"example": "ex:true",
+			"required": false,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "finish",
+	"additional_info": {
+		"inheritance": false
+	}
+}

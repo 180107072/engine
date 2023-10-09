@@ -1,0 +1,57 @@
+{
+	"name": "for i in range()",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "loop",
+	"function": "for_i",
+	"class_params": {},
+	"func_params": {
+		"range": {
+			"type": "list",
+			"example": "ex:[5,10,2]",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"true_case": {
+			"type": "string",
+			"example": "ex:'next_id_in_loop'",
+			"required": true,
+			"path": false,
+			"output": true
+		},
+		"false_case": {
+			"type": "string",
+			"example": "ex:'next_id'",
+			"required": true,
+			"path": false,
+			"output": true
+		},
+		"index_name": {
+			"type": "string",
+			"example": "ex:'i'",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"state": {
+			"iteration": 0,
+			"i": 0,
+			"initial_state": true
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "condition",
+	"additional_info": {
+		"inheritance": false
+	}
+}

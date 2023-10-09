@@ -1,0 +1,38 @@
+{
+	"name": "script",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "invoce_code",
+	"function": "assign_value",
+	"class_params": {},
+	"func_params": {
+		"variable": {
+			"type": "string",
+			"example": "ex:'{{variable1}}'",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"value": {
+			"type": "string",
+			"example": "ex:{'a':[1,2,3]}or'{%block_id%}'",
+			"required": true,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": null,
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "0001",
+	"additional_info": {
+		"inheritance": false
+	}
+}

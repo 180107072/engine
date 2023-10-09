@@ -1,0 +1,53 @@
+{
+	"name": "alert",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "Web",
+	"function": "alert",
+	"class_params": {
+		"driver_path": {
+			"type": "string",
+			"example": "ex:'c:\\path\\asd.asd'",
+			"required": false,
+			"path": true,
+			"output": false
+		},
+		"download_path": {
+			"type": "string",
+			"example": "ex:'c:\\path\\asd.asd'",
+			"required": false,
+			"path": true,
+			"output": false
+		}
+	},
+	"func_params": {
+		"text": {
+			"type": "string",
+			"example": "ex:'asdasd'",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"timeout": {
+			"type": "float",
+			"example": "ex:5,5",
+			"required": false,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "finish",
+	"additional_info": {
+		"inheritance": true
+	}
+}

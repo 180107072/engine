@@ -1,0 +1,39 @@
+{
+	"name": "start application",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "application",
+	"function": "start",
+	"class_params": {
+		"path": {
+			"type": "string",
+			"example": "ex:'c:\\path\\asd.txt'",
+			"required": true,
+			"path": true,
+			"output": false
+		}
+	},
+	"func_params": {
+		"timeout": {
+			"type": "number",
+			"example": "ex:5",
+			"required": false,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "finish",
+	"additional_info": {
+		"inheritance": false
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"name": "is exists",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "byDesktop",
+	"function": "is_exists",
+	"class_params": {
+		"selector": {
+			"type": "list",
+			"example": "ex:[{\"class_name\":\"Notepad\",\"backend\":\"uia\"}]",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"regexp": {
+			"type": "boolean",
+			"example": "ex:true",
+			"required": true,
+			"path": false,
+			"output": false
+		}
+	},
+	"func_params": {},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "finish",
+	"additional_info": {
+		"inheritance": true
+	}
+}

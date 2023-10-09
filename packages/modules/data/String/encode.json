@@ -1,0 +1,38 @@
+{
+	"name": "string encode",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "String",
+	"function": "encode",
+	"class_params": {},
+	"func_params": {
+		"string": {
+			"type": "string",
+			"example": "ex:'text'",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"encoding": {
+			"type": "string",
+			"example": "ex:'utf-8'",
+			"required": true,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "finish",
+	"additional_info": {
+		"inheritance": false
+	}
+}

@@ -1,0 +1,74 @@
+{
+	"name": "find_elements",
+	"module": "pyPythonRPA.Robot.pythonRPA",
+	"class": "Web",
+	"function": "find_elements",
+	"class_params": {
+		"driver_path": {
+			"type": "string",
+			"example": "ex:'c:\\path\\asd.asd'",
+			"required": false,
+			"path": true,
+			"output": false
+		},
+		"download_path": {
+			"type": "string",
+			"example": "ex:'c:\\path\\asd.asd'",
+			"required": false,
+			"path": true,
+			"output": false
+		}
+	},
+	"func_params": {
+		"selector": {
+			"type": "string",
+			"example": "ex:'asdasd'",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"by": {
+			"type": "string",
+			"example": "ex:'xpath'",
+			"required": true,
+			"path": false,
+			"output": false
+		},
+		"timeout": {
+			"type": "number",
+			"example": "ex:1",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"until_not": {
+			"type": "boolean",
+			"example": "ex:false",
+			"required": false,
+			"path": false,
+			"output": false
+		},
+		"event": {
+			"type": "string",
+			"example": "ex:'presence_of_element_located'",
+			"required": true,
+			"path": false,
+			"output": false
+		}
+	},
+	"results": null,
+	"object": null,
+	"inherit_object": null,
+	"breakpoint": false,
+	"if_error": {
+		"go_to": "block_id",
+		"repeat": 1,
+		"counter": 0,
+		"delay": 0
+	},
+	"start": false,
+	"next_id": "finish",
+	"additional_info": {
+		"inheritance": true
+	}
+}
