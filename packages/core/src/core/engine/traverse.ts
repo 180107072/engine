@@ -1,6 +1,6 @@
-import dag from "../dag";
-import { dfsFromNode } from "graphology-traversal";
-import { NODES } from "../nodes/definitions";
+import dag from '../dag'
+import { dfsFromNode } from 'graphology-traversal'
+import { NODES } from '../nodes/definitions'
 
 /**
  * There may be errors
@@ -10,78 +10,72 @@ import { NODES } from "../nodes/definitions";
 
 export const traverse = (
   root = NODES.ROOT,
-  keys = ["loop/for_each"]
-): [Record<string, ReturnType<typeof dag.getNodeAttributes>>, string[][]] => {
-  console.log("Start: ", performance.now());
+  keys = ['loop/for_each']
+): [ReturnType<typeof dag.getNodeAttributes>[], Map<string, string>] => {
+  console.log('Start: ', performance.now())
 
-  const loops: string[] = [];
+  const loops: string[] = []
 
-  const connections: string[][] = [];
+  const connections = new Map<string, string>()
 
-  const nodes: Record<string, ReturnType<typeof dag.getNodeAttributes>> = {};
-
-  const findLoop = (key: string) =>
-    dag.findEdge(
-      (_edge, attrs, _source, target) =>
-        target === key && keys.includes(attrs.key)
-    );
+  const nodes: ReturnType<typeof dag.getNodeAttributes>[] = []
 
   const findLast = (node: string) =>
     dag.findEdge((_edge, _attrs, source, _target) => source === node) ===
-    undefined;
+    undefined
 
-  const startFromNode = (node: string) => {
-    dfsFromNode(dag, node, (key) => {
-      const edge = findLoop(key);
+  const startFromNode = (start: string) => {
+    dfsFromNode(dag, start, (node, attrs) => {
+      const edge = keys.includes(attrs.key)
       /**
        * Found next loop in graph
        */
       if (edge) {
-        const source = dag.source(edge);
-
         /**
          * If loops are nested, add connection and break dfs loop
          */
-        if (source !== node) {
-          connections.push([source, node]);
-          return true;
+        if (node !== start) {
+          connections.set(node, start)
+
+          return true
         }
 
-        loops.push(source);
+        loops.push(node)
       }
-    });
-  };
+    })
+  }
 
   /**
    * Traverse through graph to find loops with permission
    */
   dfsFromNode(dag, root, (node, attrs) => {
-    const edge = findLoop(node);
+    if (node === root) return false
 
-    nodes[node] = attrs;
+    const edge = keys.includes(attrs.key)
+
+    nodes.push(attrs)
 
     /**
      * If loop found, start new loop from its direction
      */
     if (edge) {
-      const source = dag.source(edge);
+      loops.push(node)
 
-      loops.push(source);
-
-      startFromNode(source);
+      startFromNode(node)
     }
 
     /**
      * Last node in some direction goes to latest loop
      */
-    const isLast = findLast(node);
+    const isLast = findLast(node)
 
     if (isLast) {
-      connections.push([loops[loops.length - 1], node]);
+      connections.set(node, loops[loops.length - 1])
     }
-  });
+  })
 
-  console.log("End: ", performance.now());
+  console.log(connections)
+  console.log('End: ', performance.now())
 
-  return [nodes, connections.filter(([v1, v2]) => v1 && v2)];
-};
+  return [nodes, connections]
+}

@@ -7,6 +7,7 @@ import 'allotment/dist/style.css'
 import Sidebar from './ui/sidebar'
 import { Editor } from '../renderer/editor'
 import { Snapshot } from '../renderer/snapshot'
+import { mergeWithReferences } from '../core/engine/merge'
 
 export const Workbench = () => {
   return (
@@ -15,9 +16,9 @@ export const Workbench = () => {
         <Allotment.Pane>
           <button
             onClick={() => {
-              const [connectedNodes, loopConnections] = traverse()
+              const nodes = mergeWithReferences(...traverse())
 
-              console.log(connectedNodes, loopConnections)
+              console.log(nodes)
             }}
             className='absolute left-0 top-0 z-50 m-2 w-24 bg-zinc-200 rounded font-extrabold'
           >

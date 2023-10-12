@@ -18,6 +18,7 @@ type ArgumentProps = {
   example: string
   required: boolean
   output: boolean
+  value?: any
 }
 
 type ModuleNode = {

@@ -1,5 +1,6 @@
-import { DirectedGraph } from "graphology";
+import { DirectedGraph } from 'graphology'
+import { NodeGenerator } from '../engine/generators/node'
 
-const dag = new DirectedGraph<DAG.Node, DAG.Edge, DAG.Graph>();
+const dag = new DirectedGraph<NodeGenerator, DAG.Edge, DAG.Graph>()
 
-export default dag;
+export default dag

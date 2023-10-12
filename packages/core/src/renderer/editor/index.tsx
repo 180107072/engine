@@ -11,6 +11,8 @@ import dag from '../../core/dag'
 import { NODES, NODE_TYPES } from '../../core/nodes/definitions'
 import { createAppStore } from '../../shared/store/create'
 
+import { createNodeAttributes } from '../../core/dag/create-node-attributes'
+
 const onDragOver = (event: DragEvent) => {
   event.preventDefault()
   event.dataTransfer!.dropEffect = 'move'
@@ -24,7 +26,7 @@ export const Editor = () => {
 
   const onInit = (rfi: ReactFlowInstance) => setReactFlowInstance(rfi)
 
-  const onDrop = async (event: DragEvent) => {
+  const onDrop = (event: DragEvent) => {
     event.preventDefault()
 
     if (!reactFlowInstance) return
@@ -33,16 +35,12 @@ export const Editor = () => {
 
     const transferData = event.dataTransfer!.getData('application/reactflow')
 
-    const node: ModuleNode = JSON.parse(transferData)
-
-    const key = `${node.className}/${node.functionName}`
+    const data: ModuleNode = JSON.parse(transferData)
 
     const position = reactFlowInstance.project({
       x: event.clientX,
       y: event.clientY
     })
-
-    const data = { key, ...node }
 
     const newNode = {
       id,
@@ -51,7 +49,7 @@ export const Editor = () => {
       data
     }
 
-    dag.addNode(id, data)
+    dag.addNode(id, createNodeAttributes(id, data) as any)
     addNode(newNode)
   }
 
