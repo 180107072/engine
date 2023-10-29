@@ -2,22 +2,23 @@ import { NodeGenerator } from './generators/node'
 
 export const mergeWithReferences = (
   connectedNodes: NodeGenerator[],
-  loopConnections: Map<string, string>
+  referenceConnections: Map<string, string>
 ) => {
-  const references = loopConnections.keys()
+  const iterator = referenceConnections.keys()
 
-  let next = references.next()
+  let next = iterator.next()
 
   while (!next.done) {
-    const referee = next.value
+    const pointer = next.value
 
     for (const { connections, id } of connectedNodes) {
-      if (id === referee) {
-        connections.set('reference', loopConnections.get(referee)!)
-      }
+      if (id !== pointer) continue
+      const reference = referenceConnections.get(pointer)
+
+      if (reference) connections.set('reference', reference)
     }
 
-    next = references.next()
+    next = iterator.next()
   }
 
   return connectedNodes

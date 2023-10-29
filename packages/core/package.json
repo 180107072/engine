@@ -23,8 +23,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "reactflow": "^11.9.2",
+    "realms-shim": "^1.2.2",
+    "shadowrealm-api": "^0.8.2",
     "swr": "^2.2.4",
     "use-undoable": "^4.0.0",
+    "zundo": "^2.0.0",
     "zustand": "^4.4.1"
   },
   "devDependencies": {

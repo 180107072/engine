@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 importers:
 
   .:
@@ -53,12 +49,21 @@ importers:
       reactflow:
         specifier: ^11.9.2
         version: 11.9.2(@types/react@18.2.25)(react-dom@18.2.0)(react@18.2.0)
+      realms-shim:
+        specifier: ^1.2.2
+        version: 1.2.2
+      shadowrealm-api:
+        specifier: ^0.8.2
+        version: 0.8.2
       swr:
         specifier: ^2.2.4
         version: 2.2.4(react@18.2.0)
       use-undoable:
         specifier: ^4.0.0
         version: 4.0.0(react@18.2.0)
+      zundo:
+        specifier: ^2.0.0
+        version: 2.0.0(zustand@4.4.3)
       zustand:
         specifier: ^4.4.1
         version: 4.4.3(@types/react@18.2.25)(react@18.2.0)
@@ -122,6 +127,10 @@ importers:
       '@engine/modules':
         specifier: workspace:*
         version: link:../modules
+    devDependencies:
+      '@types/node':
+        specifier: ^20.8.0
+        version: 20.8.3
 
 packages:
 
@@ -2401,6 +2410,11 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /realms-shim@1.2.2:
+    resolution: {integrity: sha512-NOskQ7IJEnHN4Dhu462Pf0Kl8YHSPjt6V+fVvrGSCs/SfAa433CLTyJ632DFsZC2ENBQ9p6tEZ3w+1Vkycuwyg==}
+    deprecated: TC39 has taken Realms in a new direction (ShadowRealm) and the security properties of the realms-shim have not been maintained.
+    dev: false
+
   /resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
     engines: {node: '>=4'}
@@ -2466,6 +2480,10 @@ packages:
     dependencies:
       lru-cache: 6.0.0
     dev: true
+
+  /shadowrealm-api@0.8.2:
+    resolution: {integrity: sha512-JJvmduce8QhsyCnabM7Fm+FzEeubuuARCe/iJcSqzdzRKISeQjCvMKFIrbt4ATEIWuFF00mU2uTKG76Ifc1xOQ==}
+    dev: false
 
   /shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
@@ -2834,6 +2852,14 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /zundo@2.0.0(zustand@4.4.3):
+    resolution: {integrity: sha512-XzKDyunmyxvQHKDjgTmOClOQscJAm5NAa1iEazR0DilvV/uwCjnDwlHJuJ+GmG/oj5RMjzsD0ptghZzjEj1w4g==}
+    peerDependencies:
+      zustand: ^4.3.0
+    dependencies:
+      zustand: 4.4.3(@types/react@18.2.25)(react@18.2.0)
+    dev: false
+
   /zustand@4.4.3(@types/react@18.2.25)(react@18.2.0):
     resolution: {integrity: sha512-oRy+X3ZazZvLfmv6viIaQmtLOMeij1noakIsK/Y47PWYhT8glfXzQ4j0YcP5i0P0qI1A4rIB//SGROGyZhx91A==}
     engines: {node: '>=12.7.0'}
@@ -2853,3 +2879,7 @@ packages:
       react: 18.2.0
       use-sync-external-store: 1.2.0(react@18.2.0)
     dev: false
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false

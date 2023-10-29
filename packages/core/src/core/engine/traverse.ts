@@ -5,16 +5,13 @@ import { NODES } from '../nodes/definitions'
 /**
  * There may be errors
  * If the cycle is the last node
- * Some spaghetti connection
  */
 
 export const traverse = (
   root = NODES.ROOT,
   keys = ['loop/for_each']
 ): [ReturnType<typeof dag.getNodeAttributes>[], Map<string, string>] => {
-  console.log('Start: ', performance.now())
-
-  const loops: string[] = []
+  const refs: string[] = []
 
   const connections = new Map<string, string>()
 
@@ -24,23 +21,23 @@ export const traverse = (
     dag.findEdge((_edge, _attrs, source, _target) => source === node) ===
     undefined
 
-  const startFromNode = (start: string) => {
-    dfsFromNode(dag, start, (node, attrs) => {
-      const edge = keys.includes(attrs.key)
+  const capture = (snapshot: string) => {
+    dfsFromNode(dag, snapshot, (node, instance) => {
+      const reference = keys.includes(instance.key)
       /**
        * Found next loop in graph
        */
-      if (edge) {
+      if (reference) {
         /**
          * If loops are nested, add connection and break dfs loop
          */
-        if (node !== start) {
-          connections.set(node, start)
+        if (node !== snapshot) {
+          connections.set(node, snapshot)
 
           return true
         }
 
-        loops.push(node)
+        refs.push(node)
       }
     })
   }
@@ -48,20 +45,20 @@ export const traverse = (
   /**
    * Traverse through graph to find loops with permission
    */
-  dfsFromNode(dag, root, (node, attrs) => {
+  dfsFromNode(dag, root, (node, instance) => {
     if (node === root) return false
 
-    const edge = keys.includes(attrs.key)
+    const reference = keys.includes(instance.key)
 
-    nodes.push(attrs)
+    nodes.push(instance)
 
     /**
      * If loop found, start new loop from its direction
      */
-    if (edge) {
-      loops.push(node)
+    if (reference) {
+      refs.push(node)
 
-      startFromNode(node)
+      capture(node)
     }
 
     /**
@@ -70,12 +67,9 @@ export const traverse = (
     const isLast = findLast(node)
 
     if (isLast) {
-      connections.set(node, loops[loops.length - 1])
+      connections.set(node, refs[refs.length - 1])
     }
   })
-
-  console.log(connections)
-  console.log('End: ', performance.now())
 
   return [nodes, connections]
 }

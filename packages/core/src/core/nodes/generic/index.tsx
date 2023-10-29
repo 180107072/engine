@@ -1,4 +1,4 @@
-import { ChangeEvent, FC } from 'react'
+import { ChangeEvent, FC, useState } from 'react'
 import { Connection, Handle, Position } from 'reactflow'
 
 import dag from '../../dag'
@@ -19,24 +19,26 @@ export const GenericNode: FC<AppNode> = ({ id, data }) => {
 
   const key = generateKey(data)
 
+
   const generator = dag.getNodeAttributes(id)
+
 
   const parameters = mapPropsToParameters(data)
 
   const onChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
-    const param = generator.getParameter(target.id)
+    const parameter = generator.getParameter(target.id)
 
-    param.set(target.name, target.value)
+    parameter.set(target.name, target.value)
   }
 
   const onConnect = (connection: Connection) => {
-    dag.mergeEdge(connection.source, connection.target, { key })
+    dag.addEdge(connection.source, connection.target, { key, name: connection.sourceHandle! })
 
-    generator.addConnection(connection.sourceHandle!, connection.target!)
+    generator.connections.set(connection.sourceHandle!, connection.target!)
   }
 
   return (
-    <div className='bg-zinc-700 w-72 text-zinc-300 font-mono outline-1 outline-zinc-500 overflow-hidden rounded-md'>
+    <div className='bg-zinc-700 w-72 text-zinc-300 font-mono outline-1 outline-zinc-500 rounded-md'>
       <Handle
         type='target'
         id={id}
@@ -57,6 +59,7 @@ export const GenericNode: FC<AppNode> = ({ id, data }) => {
           attributeId={key}
           attributes={attributes}
           onChange={onChange}
+          onConnect={onConnect}
         />
       ))}
 

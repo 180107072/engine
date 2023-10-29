@@ -21,8 +21,7 @@ export class Parameter extends Map<string, string> {
       next = entries.next()
     }
 
-    return {
-      [this.name]: result
-    }
+    return result
+
   }
 }

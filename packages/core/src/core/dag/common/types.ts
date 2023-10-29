@@ -1,6 +1,7 @@
 namespace DAG {
   export type Edge = {
     key: string
+    name: string
   }
 
   export type Node = {

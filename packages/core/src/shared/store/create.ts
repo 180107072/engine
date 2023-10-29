@@ -1,4 +1,4 @@
-import { createWithEqualityFn } from "zustand/traditional";
+import { createWithEqualityFn } from 'zustand/traditional'
 import {
   Connection,
   EdgeChange,
@@ -7,46 +7,44 @@ import {
   addEdge,
   applyNodeChanges,
   applyEdgeChanges,
-  Edge,
-} from "reactflow";
+  Edge
+} from 'reactflow'
 
-import { defaultState } from "./default";
-import { ReactFlowState } from "./types";
+import { defaultState } from './default'
+import { ReactFlowState } from './types'
+import { temporal } from 'zundo'
+import dag from '../../core/dag'
+import { createNodeAttributes } from '../../core/dag/create-node-attributes'
 
-export const createAppStore = createWithEqualityFn<ReactFlowState>(
-  (set, get) => ({
+export const useNodesApi = createWithEqualityFn(
+  temporal<ReactFlowState>((set, get) => ({
     ...defaultState,
-    onNodesChange: (changes: NodeChange[]) => {
-      const nodes = get().nodes;
-
+    onNodesChange: (changes: NodeChange[]) =>
       set({
-        nodes: applyNodeChanges(changes, nodes),
-      });
-    },
-    onEdgesChange: (changes: EdgeChange[]) => {
+        nodes: applyNodeChanges(changes, get().nodes)
+      }),
+    onEdgesChange: (changes: EdgeChange[]) =>
       set({
-        edges: applyEdgeChanges(changes, get().edges),
-      });
-    },
-    onConnect: (connection: Connection) => {
+        edges: applyEdgeChanges(changes, get().edges)
+      }),
+    onConnect: (connection: Connection) =>
       set({
-        edges: addEdge({ ...connection, animated: true }, get().edges),
-      });
-    },
+        edges: addEdge({ ...connection, animated: true }, get().edges)
+      }),
     addNode: (node: Node) => {
-      set({
-        nodes: get().nodes.concat(node),
-      });
-    },
+      dag.addNode(node.id, createNodeAttributes(node.id, node.data))
 
-    updateEdges: (edges: Edge[]) => {
       set({
-        edges: get().edges.concat(edges),
-      });
+        nodes: get().nodes.concat(node)
+      })
     },
+    updateEdges: (edges: Edge[]) =>
+      set({
+        edges: get().edges.concat(edges)
+      }),
     setNodes: (nodes: Node[]) => set({ nodes }),
-    setEdges: (edges: Edge[]) => set({ edges }),
-  }),
+    setEdges: (edges: Edge[]) => set({ edges })
+  })),
 
   Object.is
-);
+)

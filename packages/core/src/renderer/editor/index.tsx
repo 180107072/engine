@@ -6,12 +6,10 @@ import { shallow } from 'zustand/shallow'
 
 import 'reactflow/dist/base.css'
 import 'allotment/dist/style.css'
-import dag from '../../core/dag'
 
 import { NODES, NODE_TYPES } from '../../core/nodes/definitions'
-import { createAppStore } from '../../shared/store/create'
-
-import { createNodeAttributes } from '../../core/dag/create-node-attributes'
+import { useNodesApi } from '../../shared/store/create'
+import dag from '../../core/dag'
 
 const onDragOver = (event: DragEvent) => {
   event.preventDefault()
@@ -22,13 +20,12 @@ export const Editor = () => {
   const [reactFlowInstance, setReactFlowInstance] =
     useState<ReactFlowInstance>()
   const { nodes, edges, onNodesChange, onEdgesChange, onConnect, addNode } =
-    createAppStore((s) => s, shallow)
+    useNodesApi((s) => s, shallow)
 
   const onInit = (rfi: ReactFlowInstance) => setReactFlowInstance(rfi)
 
   const onDrop = (event: DragEvent) => {
     event.preventDefault()
-
     if (!reactFlowInstance) return
 
     const id = nanoid()
@@ -42,15 +39,9 @@ export const Editor = () => {
       y: event.clientY
     })
 
-    const newNode = {
-      id,
-      type: NODES.GENERIC,
-      position,
-      data
-    }
+    const type = NODES.GENERIC
 
-    dag.addNode(id, createNodeAttributes(id, data) as any)
-    addNode(newNode)
+    addNode({ id, type, position, data })
   }
 
   return (
@@ -60,6 +51,11 @@ export const Editor = () => {
       edges={edges}
       onNodesChange={onNodesChange}
       onEdgesChange={onEdgesChange}
+      onNodesDelete={(nodes) => {
+        for (const node of nodes) {
+          dag.dropNode(node.id)
+        }
+      }}
       onConnect={onConnect}
       onInit={onInit}
       onDrop={onDrop}
