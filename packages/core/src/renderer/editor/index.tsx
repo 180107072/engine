@@ -49,6 +49,8 @@ export const Editor = () => {
       nodeTypes={NODE_TYPES}
       nodes={nodes}
       edges={edges}
+      snapGrid={[30, 30]}
+      snapToGrid
       onNodesChange={onNodesChange}
       onEdgesChange={onEdgesChange}
       onNodesDelete={(nodes) => {

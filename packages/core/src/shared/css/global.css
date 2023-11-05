@@ -6,3 +6,12 @@ body {
   color-scheme: dark;
   background-color: black;
 }
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

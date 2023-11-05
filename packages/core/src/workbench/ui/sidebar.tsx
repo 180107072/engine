@@ -37,7 +37,7 @@ const Category = memo(({ features, category }: CategoryProps) => {
         <div className='flex flex-wrap py-1 gap-1 items-start w-full'>
           {features.map((node, i) => (
             <button
-              className='bg-zinc-900 border p-1 border-zinc-500 rounded-sm hover:bg-zinc-300 hover:text-zinc-900'
+              className='bg-gradient-to-t from-zinc-900 to-zinc-800 border border-zinc-900 p-1 rounded-md hover:bg-gradient-to-b hover:text-zinc-300'
               key={`${node.functionName}-${node.className}-${i}`}
               draggable
               onDragStart={(event: DragEvent) =>
@@ -63,10 +63,10 @@ const Sidebar = () => {
       {Object.entries(modules).map(([name, module]) => {
         return (
           <div key={name}>
-            <p className='m-1 rounded px-1 bg-zinc-800'>{name}</p>
-            {Object.entries(group(module)).map(([name, features]) => {
-              return <Category key={name} category={name} features={features} />
-            })}
+            <p className='m-1 rounded p-3 bg-zinc-800 italic font-mono line text-center font-bold'>{name}</p>
+            {Object.entries(group(module)).map(([name, features]) => (
+              <Category key={name} category={name} features={features} />
+            ))}
           </div>
         )
       })}
